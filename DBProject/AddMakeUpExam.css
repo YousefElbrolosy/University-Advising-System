@@ -1,0 +1,115 @@
+﻿/* styles.css */
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.smallcontainer {
+    background-image: linear-gradient(180deg, #dbffdb, #eeffee);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    width: 340px;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative; /* Set as a positioning context */
+}
+.content {
+    width: 340px;
+    height: 290px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.title {
+    font-weight: bold;
+    font-size: large;
+    margin-top: 220px;
+    position: absolute;
+    font-size: 23px;
+}
+
+.e1 {
+    color: red; /* Use a colon instead of equals */
+    margin-top: 0px;
+    margin-right: 34px;
+    position: absolute; /* Set as a positioning context */
+    font-size: 14px;
+}
+.e2 {
+    color: red; /* Use a colon instead of equals */
+    margin-top: 57px;
+    margin-right: 45px;
+    position: absolute; /* Set as a positioning context */
+    font-size: 14px;
+}
+.e3 {
+    color: red; /* Use a colon instead of equals */
+    margin-top: 110px;
+    margin-right: 98px;
+    position: absolute; /* Set as a positioning context */
+    font-size: 14px;
+}
+
+.button {
+    display: block;
+    margin-top: 190px; /* Adjusted margin to be relative to the container */
+    border-radius: 11px;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.1);
+    position: absolute; 
+}
+
+    .button:hover {
+        background-color: #04AA6D; /* Green */
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.11);
+    }
+
+.Cddl {
+    display: block;
+    margin-top: 20px; /* Adjusted margin to be relative to the container */
+    border-radius: 11px;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.1);
+    height: 30px;
+    position: absolute;
+}
+
+.typeddl {
+    display: block;
+    margin-top: 75px; /* Adjusted margin to be relative to the container */
+    border-radius: 11px;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.1);
+    height: 30px;
+    position: absolute;
+}
+
+#txtInput {
+    display: block;
+    margin-top: 130px; /* Adjusted margin to be relative to the container */
+    border-radius: 11px;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.1);
+    height: 30px;
+    position: absolute;
+    color: #202020;
+    border: 0.5px solid #606060;
+}
+
+.stat {
+    font-weight: bold;
+    position: absolute;
+    margin-top: 215px;
+    position:absolute;
+}

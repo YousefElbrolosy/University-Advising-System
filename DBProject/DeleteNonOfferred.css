@@ -1,0 +1,84 @@
+﻿/* styles.css */
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.smallcontainer {
+    background-image: linear-gradient(180deg, #dbffdb, #eeffee);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    width: 320px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative; /* Set as a positioning context */
+}
+
+.content {
+    width: 320px;
+    height: 270px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.title {
+    font-weight: bold;
+    font-size: large;
+    margin-top: 30px;
+    position: absolute;
+}
+
+#resp {
+    font-weight: bold;
+    font-size: large;
+    position: absolute;
+    font-size: 23px;
+}
+
+.buttonYes {
+    margin-top: 160px; /* Adjusted margin to be relative to the container */
+    margin-right: 100px;
+    border-radius: 11px;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.1);
+    position: absolute; /* Set as a positioning context */
+}
+
+    .buttonYes:hover {
+        background-color: #04AA6D; /* Green */
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.11);
+    }
+
+
+.buttonNo {
+    margin-top: 160px; /* Adjusted margin to be relative to the container */
+    margin-left:50px;
+    border-radius: 11px;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.1);
+    position: absolute; /* Set as a positioning context */
+}
+
+    .buttonNo:hover {
+        background-color: red; 
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.11);
+    }
+
+
+.stat {
+    font-weight: bold;
+    position: absolute;
+    margin-top: 200px;
+}

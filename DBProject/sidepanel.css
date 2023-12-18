@@ -1,0 +1,143 @@
+.sidepanel {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, #29AB87, #00A693);
+    overflow-x: hidden;
+    padding-top: 30px;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+
+  .not-visible-items{
+    display: flex;
+    flex-direction: column;
+
+    
+  }
+  .sidepanel-close {
+  margin-bottom: 60px; /* Adjust as needed */
+  margin-left: 30%;
+  color: #fff;
+}
+    .sidepanel-close p.sidepanel-close {
+        visibility: visible;
+    }
+    .sidepanel-close button.sidepanel-close {
+        visibility: visible;
+    }
+  
+  
+  /* When sidepanel is hovered, hide the sidepanel-close */
+  .sidepanel:hover .sidepanel-close {
+    display: none;
+  }
+  
+  /* Increase width on hover */
+  .sidepanel:hover {
+    width: 250px;
+  }
+
+  
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* Hide text by default */
+.sidepanel-text {
+    opacity: 0;
+    margin-top: 10px;
+}
+
+
+.sidepanel:hover .sidepanel-text {
+    opacity: 1;
+    color: white;
+    text-align:left;
+    background-color: transparent;
+    transition: opacity 0.5s ease;
+    border: none;
+    margin-right: 40px;
+
+}
+
+  .cap_icon {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: -80px;
+    padding-bottom: 10px;
+}
+
+
+
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: rgb(236, 236, 236);
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    max-width: none;
+    overflow: hidden;
+    height:100%;
+    width:100%;
+}
+
+  /* Collapsables ccss*/
+  /*
+ CSS for the main interaction
+*/
+/* Transparent background for accordion items */
+.accordion-item {
+    background-color: transparent;
+    border: none; /* Remove border if you want */
+}
+
+/* Transparent background for accordion headers */
+.accordion-button {
+    background-color: transparent;
+    color: #fff; /* Set text color as needed */
+    font-weight: bold;
+}
+
+/* Ensure transparent background remains when accordion is collapsed */
+.accordion-button.collapsed {
+    background-color: transparent;
+    color: #fff; /* Set text color as needed */
+    border-color: #fff;
+}
+
+/* Optional: if you want to style the accordion body */
+.accordion-body {
+    background-color: transparent;
+    color: #fff; /* Set text color as needed */
+    font-size: 12px; /* Adjust the font size as needed */
+}
+
+.perpendicular-rectangle {
+    background-image: linear-gradient(180deg, #5FA3E2, #6FC1E4);
+    border-radius: 20px;
+    width: 100%;
+    height: 25%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+
+
+  

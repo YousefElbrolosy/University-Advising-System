@@ -1,0 +1,461 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #131314;
+    min-width: 810px;
+    min-height: 576px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#form1 {
+    position: relative;
+    box-shadow: 8px 8px 4px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    background-color: #1C1D21;
+    height: 576px;
+    width: 810px;
+    border-radius: 20px;
+    transition: .5s;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+}
+.wholeimage {
+    position: absolute;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    transition: .5s;
+    z-index:auto;
+    pointer-events:none;    
+}
+
+#photo1 {
+    height: 100%;
+    aspect-ratio: 810/1024;
+    position: absolute;
+    border-radius: 0 20px 20px 0;
+    right: 0;
+    opacity: 1;
+    transition: 1.5s;
+    z-index:2;
+}
+#photo1logo {
+    position: absolute;
+    height: 200px;
+    border-radius: 20px;
+    aspect-ratio: 425/395;
+    z-index: 2;
+    right: 0;
+    opacity: 1;
+    transition: opacity 0.5s, 1.5s;
+    bottom: 0;
+}
+#photo2logo {
+    position: absolute;
+    height: 200px;
+    border-radius: 20px;
+    aspect-ratio: 425/395;
+    z-index: 1;
+    right: 0;
+    opacity: 1;
+    transition: opacity 0.5s,1.5s;
+    bottom: 0;
+}
+#photo2 {
+    height: 100%;
+    aspect-ratio: 810/1024;
+    position: absolute;
+    border-radius: 20px 0 0 20px;
+    right: 0;
+    opacity: 1;
+    transition: 1.5s;
+    z-index:1;
+}
+#studentLoginSection {
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    height: 100%;
+    aspect-ratio: 630/1024;
+    margin-right: auto;
+    border-radius: 20px 0 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    transition: opacity .5s;
+}
+#advisorLoginSection {
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    height: 100%;
+    aspect-ratio: 630/1024;
+    margin-left: auto;
+    border-radius: 0 20px 20px 0;
+    box-sizing: border-box;
+    display: flex;
+    transition:opacity .5s;
+}
+#ssucc {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    color: #30c745;
+    position:absolute;
+    top:90px;
+}
+#srej {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    color: #cc0000;
+    position: absolute;
+    top: 90px;
+}
+#arej {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    color: #cc0000;
+    position: absolute;
+    top: 90px;
+}
+#asucc {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    color: #30c745;
+    position: absolute;
+    top: 90px;
+}
+h1 {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 30px;
+    color: #e2e2e2;
+    padding-bottom: 12px;
+}
+h2 {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffffff60;
+}
+.loginform {
+    margin: auto;
+}
+.textfield,
+.textfield1,
+.textfield2 {
+    position: relative;
+    border-bottom: 1px solid #ffffff50;
+    margin: 24px 0;
+    width: 250px;
+}
+    .textfield input,
+    .textfield1 input,
+    .textfield2 input{
+        font-family: Poppins, sans-serif;
+        color: #ffffff;
+        width: 100%;
+        padding: 0 2px;
+        height: 40px;
+        font-size: 12px;
+        border: none;
+        background: none;
+        outline: none;
+    }
+
+    .textfield label,
+    .textfield1 label,
+    .textfield2 label{
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        color: #ffffff50;
+        transform: translateY(-50%);
+        font-family: Poppins, sans-serif;
+        font-size: 11px;
+        font-weight: lighter;
+        pointer-events: none;
+        transition: .5s;
+    }
+
+.span1::before,
+.textfield1 span::before{
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: #5FA3E2;
+        transition: .5s;
+    }
+.span2::before,
+.textfield2 span::before{
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: #9C6FE4;
+        transition: .5s;
+    }
+
+#studentID:focus ~ #studentIDLabel,
+#studentID:valid ~ #studentIDLabel,
+#studentPasswordL:focus ~ #StudentPasswordLLabel,
+#studentPasswordL:valid ~ #StudentPasswordLLabel,
+.textfield1 input:focus ~ label,
+.textfield1 input:valid ~ label{
+    top: -5px;
+    color: #5FA3E2;
+}
+
+#advisorID:focus ~ #advisorIDLabel,
+#advisorID:valid ~ #advisorIDLabel,
+#advisorPasswordL:focus ~ #AdvisorPasswordLLabel,
+#advisorPasswordL:valid ~ #AdvisorPasswordLLabel,
+.textfield2 input:focus ~ label,
+.textfield2 input:valid ~ label
+ {
+    top: -5px;
+    color: #9C6FE4;
+}
+    .textfield1 input:not(:placeholder-shown):not(:focus):user-invalid ~ label,
+    .textfield2 input:not(:placeholder-shown):not(:focus):user-invalid ~ label {
+        top: -5px;
+        color: #cc0000;
+        width: 100%
+    }
+    .textfield1 input:not(:placeholder-shown):not(:focus):user-invalid ~ span::before,
+    .textfield2 input:not(:placeholder-shown):not(:focus):user-invalid ~ span::before {
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: #cc0000;
+        transition: .5s;
+        width: 100%;
+    }
+    .textfield1 input:not(:placeholder-shown):not(:focus):user-invalid {
+        color: #cc0000;
+    }
+
+
+    .textfield input:focus ~ span::before,
+    .textfield input:valid ~ span::before,
+    .textfield1 input:valid ~ span::before,
+    .textfield1 input:focus ~ span::before,
+    .textfield2 input:focus ~ span::before,
+    .textfield2 input:valid ~ span::before {
+        width: 100%;
+    }
+
+
+#Button1,
+#StudentReg {
+    color: #ffffff;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    height: 32px;
+    width: 100%;
+    background-color: #5FA3E2;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#StudentReg{
+    width: 50%;
+    margin-left: 25%;
+    margin-top:40px;
+}
+    #Button1:hover,
+    #StudentReg:hover {
+        background-color: #5892c8;
+    }
+.regfield {
+    display: inline;
+    position:relative;
+    margin: 24px 0;
+    width: 250px;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    font-weight: lighter;
+    color: #ffffff50;
+    top:110px;    
+}
+.sup {
+    left: 25px;
+    top: 5px;
+    height: 50px;
+    margin: 24px 0;
+    display:inline;
+    position: absolute;
+}
+.aup {
+    right: 25px;
+    top: 5px;
+    height: 50px;
+    margin: 24px 0;
+    display: inline;
+    position: absolute;
+}
+.arrow{
+    aspect-ratio:26/53;
+    width: 20px;
+    transition: .5s;
+}
+.arrow:hover,
+ .sarrowl:hover,
+ .aarrowl:hover{
+        transform: scale(1.2);
+    }
+.bphoto {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.sarrowl {
+    position: absolute;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: #ffffff50;
+    top: 12px;
+    left: 30px;
+    cursor: pointer;
+    transition:.5s;
+}
+.RegisterSection {
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    height: 100%;
+    width: auto;
+    border-radius: 20px 0 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s;
+    pointer-events: none;
+}
+.regg {
+    display: block;
+    margin: auto;
+    width: 85%;
+    transition: opacity .5s;
+    
+}
+
+.aarrowl {
+    position: absolute;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: #ffffff50;
+    cursor: pointer;
+    top: 12px;
+    right: 30px;
+    transition: .5s;
+}
+.regbutton {
+    margin-left: 20px;
+    background-color: #333437;
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    width: 75px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Poppins, sans-serif;
+    font-size: 11px;
+    font-weight: lighter;
+    margin-left: 20px;
+}
+    .regbutton:hover {
+        background-color: #27272a;
+    }
+
+
+#Button3,
+#AdvisorReg {
+    color: #ffffff;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    height: 32px;
+    width: 100%;
+    background-color: #9C6FE4;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+    #Button3:hover,
+    #AdvisorReg:hover {
+        background-color: #9169d2;
+    }
+    #AdvisorReg{
+        width: 50%;
+        margin-left: 25%;
+        margin-top:40px;
+    }
+    #Button5,
+    #Button6 {
+        font-weight: 500;
+        color: black;
+        font-size: 20px;
+        width: 275px;
+        background-color: #fb6666;
+        height: 45px;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        border-bottom: 2px solid;
+        margin-top: 20px;
+    }
+    #Button5:hover,
+    #Button6:hover {
+        background-color: #ce3e3e;
+    }
+
+#Register {
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+#regtext {
+    text-align:center;
+    font-size: 13px;
+}
+
+.twotext {
+    display: flex;
+    justify-content: space-evenly;
+    transition:.5s;
+}
+#DarkMode{
+    position:absolute;
+    right:0%;
+    bottom:0%;
+    z-index:4;
+}
