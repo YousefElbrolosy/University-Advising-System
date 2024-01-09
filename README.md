@@ -25,10 +25,6 @@ This repository contains the source code and documentation for a University Advi
 
 3. **Run the Application**: Build and run the ASP.NET application to start the University Advising System.
 
-## Deployment
-
-The project is deployed online and can be accessed at [University Advising System](https://quadquery.azurewebsites.net/). Feel free to explore the live system and test its features.
-
 ## Contributing
 
 If you would like to contribute to the project, please follow the standard GitHub workflow:
