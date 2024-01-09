@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the source code and documentation for a University Advising System, implemented using SQL for the database backend and ASP.NET for the user interface. The system aims to streamline the advising process within a university, providing a centralized platform for students and advisors to manage academic-related activities.
+This repository contains the source code for a University Advising System, implemented using SQL for the database backend and ASP.NET for the user interface. The system aims to streamline the advising process within a university, providing a centralized platform for students and advisors to manage academic-related activities.
 
 ## Features
 
